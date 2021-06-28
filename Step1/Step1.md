@@ -1,3 +1,5 @@
+1000번
+
 ## 문제
 
 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
@@ -11,28 +13,57 @@
 첫째 줄에 A+B를 출력한다.
 
 ```swift
-**let** line = readLine()!
+//
+let line = readLine()!
 
-**let** lineArr = line.split(separator: " ")
+let lineArr = line.split(separator: " ")
 
-
-
-**let** result = lineArr[0] + lineArr[1]
+let result = lineArr[0] + lineArr[1]
 
 print(result)
 
 
+//
+let line = readLine()!
 
-**let** line = readLine()!
-
-**let** intArr = line.split(separator: " ").map{Int($0)!}
+let intArr = line.split(separator: " ").map{Int($0)!}
 
 print(intArr.reduce(0, {$0 + $1}))
 
 
-
+//
 print(readLine()!.split(separator: " ").map{Int($0)!}.reduce(0, +))
 ```
 
 
+
+1001번
+
+## 문제
+
+두 정수 A와 B를 입력받은 다음, A-B를 출력하는 프로그램을 작성하시오.
+
+## 입력
+
+첫째 줄에 A와 B가 주어진다. (0 < A, B < 10)
+
+## 출력
+
+첫째 줄에 A-B를 출력한다.
+
+```swift
+//성공
+let line = readLine()!
+let lineArr = line.split(separator: " ").map{Int($0)}
+let result = lineArr[0]! - lineArr[1]!
+print(result)
+
+//실패 왜지?
+let line = readLine()!
+let intArr = line.split(separator: " ").map{Int($0)!}
+print(intArr.reduce(0, {$0 - $1}))
+
+//실패 왜??
+print(readLine()!.split(separator: " ").map{Int($0)!}.reduce(0, {x , y in -x -y})
+```
 
