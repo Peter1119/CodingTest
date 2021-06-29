@@ -13,14 +13,21 @@ let test = #"""
 """#
 print(test)
 
-
-let line = readLine()!
-let lineArr = line.split(separator: " ").map{Int($0)}
-let result = lineArr[0]! - lineArr[1]!
-print(result)
+//
+//let line = readLine()!
+//let intArr = line.split(separator: " ").map{Int($0)}
+//let result = lineArr[0]! - lineArr[1]!
+//print(result)
 
 //let line = readLine()!
 //let intArr = line.split(separator: " ").map{Int($0)!}
 //print(intArr.reduce(0, {$0 - $1}))
 
 print(readLine()!.split(separator: " ").map{Int($0)!}.reduce(0, {$0 - $1}))
+
+
+let line = readLine()!
+let intArr = line.split(separator: " ").map{Int($0)}
+let result = intArr[0]!*intArr[1]!
+
+print(readLine()!.split(separator: " ").map{Int($0)!}.reduce(1, {$0 * $1}))

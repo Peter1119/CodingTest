@@ -67,3 +67,13 @@ print(intArr.reduce(0, {$0 - $1}))
 print(readLine()!.split(separator: " ").map{Int($0)!}.reduce(0, {x , y in -x -y})
 ```
 
+10998번
+
+## 출력
+
+첫째 줄에 A×B를 출력한다.
+
+```swift
+print(readLine()!.split(separator: " ").map{Int($0)!}.reduce(1, {$0 * $1}))
+```
+
