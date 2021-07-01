@@ -98,11 +98,33 @@ print(readLine()!.split(separator: " ").map{Int($0)!}.reduce(1, {$0 * $1}))
 
 
 ```swift
+//Sol1
 let line = readLine()!
 let doubleArr = line.split(separator: " ").map{Double($0)!}
 let result = doubleArr[0] / doubleArr[1]
 print(result)
 
+//Sol2
 print(1 / readLine()!.split(separator: " ").map{Double($0)!}.reduce(1){$1 / $0})
+```
+
+
+
+10869번
+
+## 문제
+
+두 자연수 A와 B가 주어진다. 이때, A+B, A-B, A*B, A/B(몫), A%B(나머지)를 출력하는 프로그램을 작성하시오. 
+
+```swift
+let lineArr = readLine()!.split(separator: " ")
+let a = Int(lineArr[0]) ?? 0
+let b = Int(lineArr[1]) ?? 0
+
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print(a % b)
 ```
 
