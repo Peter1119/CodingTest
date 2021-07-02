@@ -128,3 +128,54 @@ print(a / b)
 print(a % b)
 ```
 
+
+
+10430번 나머지
+
+## 문제
+
+(A+B)%C는 ((A%C) + (B%C))%C 와 같을까?
+
+(A×B)%C는 ((A%C) × (B%C))%C 와 같을까?
+
+세 수 A, B, C가 주어졌을 때, 위의 네 가지 값을 구하는 프로그램을 작성하시오.
+
+```swift
+let lineArr = readLine()!.split(separator: " ").map{Int($0)!}
+let a = lineArr[0]
+let b = lineArr[1]
+let c = lineArr[2]
+
+print((a+b)%c)
+print(((a%c) + (b%c))%c)
+print((a*b)%c)
+print(((a%c)*(b%c))%c)
+```
+
+
+
+2588번 곱셈
+
+## 문제
+
+(세 자리 수) × (세 자리 수)는 다음과 같은 과정을 통하여 이루어진다.
+
+![img](https://www.acmicpc.net/upload/images/f5NhGHVLM4Ix74DtJrwfC97KepPl27s%20(1).png)
+
+(1)과 (2)위치에 들어갈 세 자리 자연수가 주어질 때 (3), (4), (5), (6)위치에 들어갈 값을 구하는 프로그램을 작성하시오.
+
+```swift
+let firstNum = Int(readLine()!)!
+let secondNum = Int(readLine()!)!
+
+let a = firstNum*(secondNum%10)
+let b = firstNum*((secondNum%100)/10)
+let c = firstNum*(secondNum/100)
+let d = firstNum*secondNum
+
+print(a)
+print(b)
+print(c)
+print(d)
+```
+
