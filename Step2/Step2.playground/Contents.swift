@@ -17,18 +17,32 @@ import Foundation
  제한
  -10,000 ≤ A, B ≤ 10,000
  */
-let line = readLine()!
-let lineArr = line.split(separator: " ")
-
-let A = Int(lineArr[0]) ?? 0
-let B = Int(lineArr[1]) ?? 0
-
-if A < B {
-    print("<")
-} else if A > B {
-    print(">")
-} else {
-    print("==")
-}
-
+//let line = readLine()!
+//let lineArr = line.split(separator: " ")
 //
+//let A = Int(lineArr[0]) ?? 0
+//let B = Int(lineArr[1]) ?? 0
+//
+//if A < B {
+//    print("<")
+//} else if A > B {
+//    print(">")
+//} else {
+//    print("==")
+//}
+//
+////
+
+let score = Int(readLine()!)!
+
+if score >= 90 {
+    print("A")
+} else if score >= 80 {
+    print("B")
+} else if score >= 70 {
+    print("C")
+} else if score >= 60 {
+    print("D")
+} else {
+    print("F")
+}
