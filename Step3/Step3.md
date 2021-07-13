@@ -19,3 +19,25 @@ for var multi in 1...9 {
 }
 ```
 
+8393번
+
+## 문제
+
+n이 주어졌을 때, 1부터 n까지 합을 구하는 프로그램을 작성하시오.
+
+## 입력
+
+첫째 줄에 n (1 ≤ n ≤ 10,000)이 주어진다.
+
+## 출력
+
+1부터 n까지 합을 출력한다.
+
+
+
+```swift
+var number: Int = Int(readLine()!)!
+var sum: Int = Array(1...number).reduce(0, +)
+print(sum)
+```
+
