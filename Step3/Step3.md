@@ -1,3 +1,5 @@
+
+
 2739번**let** num: **Int** = **Int**(readLine()!)! **for** **var** multi **in** 1...9 {    print("\(num) * \(multi) = \(num * multi)") }
 
 ## 문제
@@ -184,6 +186,31 @@ var i: Int = 1
 for i in 1 ... t {
     nums = readLine()!.split(separator: " ").map {Int($0)!}
     print("Case #\(i): \(nums[0]) + \(nums[1]) = \(nums[0] + nums[1])")
+}
+```
+
+2438번
+
+## 문제
+
+첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 찍는 문제
+
+## 입력
+
+첫째 줄에 N(1 ≤ N ≤ 100)이 주어진다.
+
+## 출력
+
+첫째 줄부터 N번째 줄까지 차례대로 별을 출력한다.
+
+```swift
+var t = Int(readLine()!)!
+
+for i in 1...t {
+  for _ in 1...i {
+    print("*", terminator: "")
+  }
+  print()
 }
 ```
 
